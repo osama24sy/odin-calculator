@@ -5,37 +5,34 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./style.css">
+    <script src="./script.js" defer></script>
     <title>Calculator</title>
 </head>
 <body>
-    <div class="main">
-        <div class="calculator">
-            <div class="screen">
-                <p id="display"></p>
-                <p id="result"></p>
-            </div>
-            <div class="buttons">
-                <div class="numbers">
-                    <button id="one" class="number">1</button>
-                    <button id="two" class="number">2</button>
-                    <button id="three" class="number">3</button>
-                    <button id="four" class="number">4</button>
-                    <button id="five" class="number">5</button>
-                    <button id="six" class="number">6</button>
-                    <button id="seven" class="number">7</button>
-                    <button id="eight" class="number">8</button>
-                    <button id="nine" class="number">9</button>
-                </div>
-                <div class="operations">
-                    <button id="add" class="operation"> + </button>
-                    <button id="subtract" class="operation"> - </button>
-                    <button id="multiply" class="operation"> * </button>
-                    <button id="divide" class="operation"> / </button>
-                    <button id="equal" class="operation"> =</button>
-                </div>
-            </div>
+    <div class="calculator-grid">
+        <div class="output">
+            <div data-previous-operand class="previous-operand"></div>
+            <div data-current-operand class="current-operand"></div>
         </div>
+        <button data-all-clear class="span-two">AC</button>
+        <button data-delete>DEL</button>
+        <button data-operation>÷</button>
+        <button data-number>1</button>
+        <button data-number>2</button>
+        <button data-number>3</button>
+        <button data-operation>*</button>
+        <button data-number>4</button>
+        <button data-number>5</button>
+        <button data-number>6</button>
+        <button data-operation>+</button>
+        <button data-number>7</button>
+        <button data-number>8</button>
+        <button data-number>9</button>
+        <button data-operation>-</button>
+        <button data-number>.</button>
+        <button data-number>0</button>
+        <button data-equals class="span-two">=</button>
     </div>
-    <script src="./script.js" charset="utf-8"></script>
+    <p style="text-align: center; color: rgba(255, 255, 255, 0.75);">This Calculator was built based on <a href="https://www.youtube.com/watch?v=j59qQ7YWLxw">Web Dev Simplified video</a></p>
 </body>
 </html>
